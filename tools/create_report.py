@@ -458,7 +458,7 @@ bullets(['Mở run-server.bat và giữ cửa sổ server hoạt động ở c�
          'Đăng nhập bằng hai tài khoản khác nhau, gửi và chấp nhận lời mời.',
          'Nhấp cửa sổ người chơi tương ứng trước khi điều khiển bằng bàn phím.'])
 h('15 3 Chơi qua mạng LAN',2)
-p('Máy chủ chạy run-server.bat hoặc May1-ChuPhong.bat để mở server kèm giao diện. Máy khách nhập IP LAN máy chủ và cổng tương ứng. Hai máy phải dùng cùng phiên bản giao thức và kết nối được TCP tới server. Dòng thông báo server đang nghe cổng 5555 là trạng thái chờ bình thường, không phải lỗi.')
+p('Máy chủ chạy run-server.bat để mở server độc lập; dùng May1-ChuPhong.bat nếu muốn mở server kèm giao diện chơi. Máy khách nhập IP LAN máy chủ và cổng tương ứng. Hai máy phải dùng cùng phiên bản giao thức và kết nối được TCP tới server. Dòng thông báo server đang nghe cổng 5555 là trạng thái chờ bình thường, không phải lỗi.')
 h('15 4 Một số tình huống thường gặp',2)
 table(['Hiện tượng','Kiểm tra hoặc thao tác'],[
 ('Không kết nối được','Xác nhận server còn mở, đúng IP/cổng và đường mạng cho phép TCP.'),
