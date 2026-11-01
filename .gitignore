@@ -1,0 +1,15 @@
+build/
+work/
+dist/
+data/
+*.log
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.dat
+!tests/fixtures/nightchase-v1.dat
+.env
+.env.*
+!.env.example
