@@ -1,4 +1,4 @@
-package nightchase;
+package vn.edu.policethief.server;
 
 import java.io.*;
 import java.lang.reflect.*;
@@ -13,8 +13,7 @@ public final class MigrationAudit {
  public static void main(String[] args)throws Exception {
   Path directory=Path.of(args[0]);Path legacy=directory.resolve("nightchase.dat");
   byte[] original=Files.readAllBytes(legacy);Object data;
-  try(ObjectInputStream in=new ObjectInputStream(new ByteArrayInputStream(original))) {
-   in.setObjectInputFilter(ObjectInputFilter.Config.createFilter("maxdepth=20;maxrefs=1000000;java.base/*;nightchase.Store$*;!*"));
+  try(ObjectInputStream in=Store.legacyInput(new ByteArrayInputStream(original))) {
    data=in.readObject();
   }
   Field usersField=data.getClass().getDeclaredField("users"),matchesField=data.getClass().getDeclaredField("matches");usersField.setAccessible(true);matchesField.setAccessible(true);

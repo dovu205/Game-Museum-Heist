@@ -13,3 +13,7 @@ data/
 .env
 .env.*
 !.env.example
+
+**/target/
+**/work/
+!server/src/test/resources/fixtures/nightchase-v1.dat

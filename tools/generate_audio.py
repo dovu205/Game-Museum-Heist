@@ -1,6 +1,6 @@
 from pathlib import Path
 import wave, math, struct, random
-ROOT=Path(__file__).resolve().parents[1]/"assets"/"audio"
+ROOT=Path(__file__).resolve().parents[1]/"client"/"src"/"main"/"resources"/"sounds"
 ROOT.mkdir(parents=True,exist_ok=True)
 RATE=22050
 def save(name,seconds,fn):
